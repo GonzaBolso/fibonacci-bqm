@@ -24,11 +24,7 @@ public class EstadisticasController {
     // Devuelve los N números de Fibonacci más consultados.
     @GetMapping("/top")
     public ResponseEntity<List<EstadisticasResponseDTO>> getTop(
-<<<<<<< HEAD
-            @RequestParam(name = "limite", defaultValue = "10") int limite) {
-=======
-            @RequestParam(name = "limit", defaultValue = "10") int limite) {
->>>>>>> bad0dad (arreglo CORS)
+    @RequestParam(name = "limite", defaultValue = "10") int limite) {
 
         List<EstadisticasResponseDTO> response =
                 estadisticasService.getTopConsultados(limite)
