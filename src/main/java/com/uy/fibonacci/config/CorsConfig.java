@@ -12,7 +12,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")           // aplica a todos los endpoints
-                .allowedOrigins("http://localhost:4200")  // solo desde Angular
+                .allowedOrigins("https://fibonacci-bqm-frontend-production.up.railway.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*");
     }

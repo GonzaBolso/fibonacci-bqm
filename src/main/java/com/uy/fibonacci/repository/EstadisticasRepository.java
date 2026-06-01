@@ -13,6 +13,12 @@ import org.springframework.stereotype.Repository;
 import java.time.LocalDateTime;
 import java.util.List;
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> bad0dad (arreglo CORS)
 @Repository
 public interface EstadisticasRepository extends JpaRepository<Estadisticas, Integer> {
 
@@ -28,4 +34,9 @@ public interface EstadisticasRepository extends JpaRepository<Estadisticas, Inte
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     Estadisticas findByNForUpdate(@Param("n") int n);
 
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> bad0dad (arreglo CORS)
