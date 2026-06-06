@@ -27,5 +27,4 @@ public interface EstadisticasRepository extends JpaRepository<Estadisticas, Inte
     @Query("SELECT e FROM Estadisticas e WHERE e.n = :n")
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     Estadisticas findByNForUpdate(@Param("n") int n);
-
 }
